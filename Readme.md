@@ -157,13 +157,7 @@ docker push DatDomrachev/dialog-service
 
 ### Использование готовых образов
 ```yaml
-# monolith/docker-compose.yml
-services:
-  monolith:
-    image: DatDomrachev/social-network-monolith:v1.0
-    # ...
-
-# microservices/docker-compose.yml  
+# docker-compose.yml  
 services:
   monolith:
     image: DatDomrachev/social-network-monolith:v2.0
@@ -173,6 +167,7 @@ services:
     image: DatDomrachev/dialog-service:v1.0
     # ...
 ```
+
 
 
 
