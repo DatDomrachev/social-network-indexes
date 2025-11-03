@@ -24,7 +24,9 @@
 ### Часть A: Запуск
 
 ```bash
-# 1. Запуск всех сервисов через docker-compose-indexes
+# 1. Запуск всех сервисов через docker-compose
+git clone https://github.com/DatDomrachev/social-network-indexes
+cd social-network-indexes
 docker-compose up -d --build
 
 # 2. Проверка работы сервисов
@@ -171,5 +173,6 @@ services:
     image: DatDomrachev/dialog-service:v1.0
     # ...
 ```
+
 
 
