@@ -21,26 +21,10 @@
 
 ## Запуск
 
-### Часть A: Запуск монолита
+### Часть A: Запуск
 
 ```bash
-# 1. Клонируем репозиторий
-git clone https://github.com/DatDomrachev/social-network
-cd social-network
-
-# 2. Запуск монолита
-cd monolith
-docker build -t social-network-monolith .
-docker run -p 8080:8080 social-network-monolith
-
-# 3. Проверка работы
-curl http://localhost:8080/health
-```
-
-### Часть B: Запуск микросервисной архитектуры
-
-```bash
-# 1. Запуск всех сервисов через docker-compose
+# 1. Запуск всех сервисов через docker-compose-indexes
 docker-compose up -d --build
 
 # 2. Проверка работы сервисов
@@ -187,3 +171,4 @@ services:
     image: DatDomrachev/dialog-service:v1.0
     # ...
 ```
+
