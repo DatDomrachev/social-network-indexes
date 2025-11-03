@@ -54,7 +54,7 @@ Client → Monolith (8080) ──────────→ In-Memory Storage
 
 - **Язык**: Go 1.21
 - **Web Framework**: Gin
-- **Хранилище**: In-memory (для демонстрации)
+- **Хранилище**: PostgreSQL + In-memory (для демонстрации)
 - **Контейнеризация**: Docker & Docker Compose
 - **Аутентификация**: JWT токены (упрощенная)
 
@@ -173,6 +173,7 @@ services:
     image: DatDomrachev/dialog-service:v1.0
     # ...
 ```
+
 
 
 
