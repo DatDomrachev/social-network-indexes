@@ -8,6 +8,7 @@
 ├── monolith/                # Директория монолита
 │   ├── main.go              # Основной код приложения
 │   ├── go.mod               # Зависимости Go
+│   ├── analyze.go           # Генерация графиков
 │   └── Dockerfile           # Сборка образа монолита
 ├── dialog-service/          # Директория микросервиса диалогов
 │   ├── main.go              # Код Dialog Service
@@ -15,7 +16,6 @@
 │   └── Dockerfile           # Сборка образа микросервиса
 ├── docker-compose.yml       # Оркестрация сервисов
 └── postman/                 # Коллекции для тестирования
-    ├── monolith.json        # Тесты для монолита
     └── microservices.json   # Тесты для микросервисов
 ```
 
@@ -171,4 +171,5 @@ services:
     image: DatDomrachev/dialog-service:v1.0
     # ...
 ```
+
 
